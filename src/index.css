@@ -1,0 +1,99 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+    background: #000;
+    color: #fff;
+    transition: all 4s;
+    word-wrap: break-word;
+  }
+  /* global */
+ a{
+  color: #fff;
+  text-decoration: none;
+ }
+ img{
+  width: 100%;
+}
+  /* nav bar */
+  nav{
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #0490a8;
+    position: fixed;
+    bottom: 10px;
+    left: 40%;
+    display: flex;
+  }
+  nav .menu-btn{
+    outline: none;
+    background: none;
+    border: none;
+    color: #fff;
+    flex: 1;
+    font-weight: 500;
+  } 
+  nav .menu-btn svg{
+    width: 30px;
+    fill: #fff;
+  }
+
+
+  /* search */
+  .search{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+  }
+  .search input{
+    width: 80%;
+    margin: 3px;
+    border: 1px solid #0490a8;
+    border-radius: 6px;
+    outline: none;
+    background: none;
+    padding: 10px;
+    color: #fff;
+  }
+  .search .logo{
+    width: 30px;
+    height: 30px;
+    background-color: #0490a8;
+    margin: auto;
+    background: url("../public/img/valid.png");
+    background-size: cover;
+
+  }
+  .search .logo img{
+    width: 100%;
+  }
+  .artist .artist-case{
+    display: flex;
+
+  }
+  
+  .artist .artist-case:hover{
+    background-color: #d3d1d160;
+  }
+  .artist .artist-case .img,.artist .artist-case .descript{
+    flex: 1;
+    margin-left: 10px;
+    overflow: hidden;
+    max-height: 300px;
+  }
+  .artist .artist-case .img{
+    background: url("../public/img/valid.png");
+    background-size: cover ;
+  }
+ 
+  @media (max-width : 500px){
+    body{
+      font:60%;
+    }
+    nav{
+      width: 100%;
+      bottom: 0px;
+    left: 0%;
+    border-radius: 0px;
+    }
+  }
