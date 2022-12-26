@@ -1,8 +1,8 @@
 body {
     font: 14px "Century Gothic", Futura, sans-serif;
     margin: 20px;
-    background: #000;
-    color: #fff;
+    background: #fff;
+    color: #000;
     transition: all 4s;
     word-wrap: break-word;
   }
@@ -17,9 +17,9 @@ body {
   /* nav bar */
   nav{
     width: 200px;
-    padding: 10px;
+    padding: 0px;
     border-radius: 10px;
-    background: #0490a8;
+    background: #000000ef;
     position: fixed;
     bottom: 10px;
     left: 40%;
@@ -32,12 +32,30 @@ body {
     color: #fff;
     flex: 1;
     font-weight: 500;
+    padding: 10px;
+  } 
+  nav .menu-btn:focus{
+    background: #000000; 
+  }
+  nav .menu-btn:hover svg, nav .menu-btn:focus svg{
+    fill: #e95528;
+    transition: 1s;
   } 
   nav .menu-btn svg{
     width: 30px;
     fill: #fff;
   }
-
+  nav .menu-btn::after{
+    content: "";
+    width: 10px;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 0px 10px 10px 0px;
+    position: relative;
+    bottom: 0px;
+    left: 5px;
+    z-index: 5;
+  }
 
   /* search */
   .search{
