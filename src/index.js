@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Menu from './asset/menu'
 import Search from './asset/search';
-import Artist from './asset/artist';  
+import Box from './asset/box';  
   class App extends React.Component {
 
     render() {
@@ -12,7 +12,7 @@ import Artist from './asset/artist';
             <div>
               <Search />
              
-                <Artist />
+                <Box />
                
                 <Menu />
               

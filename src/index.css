@@ -5,6 +5,7 @@ body {
     color: #000;
     transition: all 4s;
     word-wrap: break-word;
+    overflow: hidden;
   }
   /* global */
  a{
@@ -16,7 +17,7 @@ body {
 }
   /* nav bar */
   nav{
-    width: 200px;
+    width: 230px;
     padding: 0px;
     border-radius: 10px;
     background: #000000ef;
@@ -35,7 +36,8 @@ body {
     padding: 10px;
   } 
   nav .menu-btn:focus{
-    background: #000000; 
+    background: #000000;
+    color: #e95528; 
   }
   nav .menu-btn:hover svg, nav .menu-btn:focus svg{
     fill: #e95528;
@@ -85,25 +87,31 @@ body {
   .search .logo img{
     width: 100%;
   }
-  .artist .artist-case{
-    display: flex;
+  /* Creating boxes */
+  .container{
+    width: 100%;
+    height: 100vh;
+    
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
 
   }
-  
-  .artist .artist-case:hover{
-    background-color: #d3d1d160;
-  }
-  .artist .artist-case .img,.artist .artist-case .descript{
-    flex: 1;
-    margin-left: 10px;
-    overflow: hidden;
-    max-height: 300px;
-  }
-  .artist .artist-case .img{
-    background: url("../public/img/valid.png");
-    background-size: cover ;
-  }
  
+  .container .box{
+    background: #ffffff;
+    min-width: 200px;
+    height: 250px;
+    box-shadow: rgb(0 0 0 / 28%) 0px 1px 4px;
+    border-radius: 3px;
+  }
+  .container .box .img{
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border: 1px solid #cfcfcf;
+  }
   @media (max-width : 500px){
     body{
       font:60%;
