@@ -1,0 +1,125 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+    background: #fff;
+    color: #000;
+    transition: all 4s;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+  /* global */
+ a{
+  color: #fff;
+  text-decoration: none;
+ }
+ img{
+  width: 100%;
+}
+  /* nav bar */
+  nav{
+    width: 230px;
+    padding: 0px;
+    border-radius: 10px;
+    background: #000000ef;
+    position: fixed;
+    bottom: 10px;
+    left: 40%;
+    display: flex;
+  }
+  nav .menu-btn{
+    outline: none;
+    background: none;
+    border: none;
+    color: #fff;
+    flex: 1;
+    font-weight: 500;
+    padding: 10px;
+  } 
+  nav .menu-btn:focus{
+    background: #000000;
+    color: #e95528; 
+  }
+  nav .menu-btn:hover svg, nav .menu-btn:focus svg{
+    fill: #e95528;
+    transition: 1s;
+  } 
+  nav .menu-btn svg{
+    width: 30px;
+    fill: #fff;
+  }
+  nav .menu-btn::after{
+    content: "";
+    width: 10px;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 0px 10px 10px 0px;
+    position: relative;
+    bottom: 0px;
+    left: 5px;
+    z-index: 5;
+  }
+
+  /* search */
+  .search{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+  }
+  .search input{
+    width: 80%;
+    margin: 3px;
+    border: 1px solid #0490a8;
+    border-radius: 6px;
+    outline: none;
+    background: none;
+    padding: 10px;
+    color: #fff;
+  }
+  .search .logo{
+    width: 30px;
+    height: 30px;
+    background-color: #0490a8;
+    margin: auto;
+    background: url("../public/img/valid.png");
+    background-size: cover;
+
+  }
+  .search .logo img{
+    width: 100%;
+  }
+  /* Creating boxes */
+  .container{
+    width: 100%;
+    height: 100vh;
+    
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+
+  }
+ 
+  .container .box{
+    background: #ffffff;
+    min-width: 200px;
+    height: 250px;
+    box-shadow: rgb(0 0 0 / 28%) 0px 1px 4px;
+    border-radius: 3px;
+  }
+  .container .box .img{
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border: 1px solid #cfcfcf;
+  }
+  @media (max-width : 500px){
+    body{
+      font:60%;
+    }
+    nav{
+      width: 100%;
+      bottom: 0px;
+    left: 0%;
+    border-radius: 0px;
+    }
+  }
