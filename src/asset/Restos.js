@@ -1,4 +1,4 @@
-const Resto =()=> {
+const Restos =()=> {
     
     return (
   <h1>hello restos</h1>
@@ -7,4 +7,4 @@ const Resto =()=> {
   
 }
 
-export default Resto;
+export default Restos;

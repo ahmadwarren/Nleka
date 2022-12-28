@@ -1,15 +1,20 @@
+:root{
+  --main-color :#e95528;
+  --white: #fff;
+  --black : #111;
+}
 body {
     font: 14px "Century Gothic", Futura, sans-serif;
     margin: 20px;
-    background: #fff;
-    color: #000;
+    background: var(--white);
+    color: var(--black);
     transition: all 4s;
     word-wrap: break-word;
     /* overflow: hidden; */
   }
   /* global */
  a{
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
  }
  img{
@@ -17,10 +22,11 @@ body {
 }
   /* nav bar */
   nav{
-    width: 230px;
+    text-align: center;
+    width: 380px;
     padding: 0px;
     border-radius: 10px;
-    background: #000000ef;
+    background: #000000e0;
      position: fixed; 
      bottom: 10px;
     left: calc((100% - 230px)/2); 
@@ -44,9 +50,11 @@ body {
   nav .menu-btn:hover svg, nav .menu-btn:focus svg{
     fill: #e95528;
     transition: 1s;
+
   } 
   nav .menu-btn svg{
     width: 30px;
+    height: 30px;
     fill: #fff;
   }
   nav .menu-btn::after{
@@ -114,7 +122,7 @@ body {
     overflow: hidden;
     border: 1px solid #cfcfcf;
   }
-  @media (max-width : 310px){
+  @media (max-width : 380px){
     body{
       font:60%;
     }
