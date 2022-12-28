@@ -1,27 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+import { BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
 import './index.css';
 import Menu from './asset/menu'
 import Search from './asset/search';
 import Box from './asset/box';  
-import  {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
-  class App extends React.Component {
+//import Resto from './asset/resto'; 
 
+  class App extends React.Component {
+// ,LinkRouter,Routes,
     render() {
       return (
             <div>
-              <Search />
+              {/* <Search />
              
                 <Box />
                
-                <Menu />
+                <Menu /> */}
               
-                          
-          <Route exact path='/' element={< Search />}></Route>
-          <Route exact path='/about' element={< Box />}></Route>
-          <Route exact path='/contact' element={< Menu/>}></Route>
-                        
+        <Router> 
+        <Link to="./">Home</Link>
+          <Routes>        
+            <Route exact path='/' element={< Search />}></Route>
+            <Route exact path='/user' element={< Box />}></Route>
+            <Route exact path='/resto' element={< Menu/>}></Route>
+          </Routes> 
+        </Router>              
             </div>      
       );
     }
