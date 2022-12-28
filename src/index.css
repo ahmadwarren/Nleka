@@ -5,7 +5,7 @@ body {
     color: #000;
     transition: all 4s;
     word-wrap: break-word;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   /* global */
  a{
@@ -21,10 +21,12 @@ body {
     padding: 0px;
     border-radius: 10px;
     background: #000000ef;
-    position: fixed;
-    bottom: 10px;
-    left: 40%;
+     position: fixed; 
+     bottom: 10px;
+    left: calc((100% - 230px)/2); 
     display: flex;
+    margin: 10px auto;
+    z-index: 2;
   }
   nav .menu-btn{
     outline: none;
@@ -112,7 +114,7 @@ body {
     overflow: hidden;
     border: 1px solid #cfcfcf;
   }
-  @media (max-width : 500px){
+  @media (max-width : 310px){
     body{
       font:60%;
     }
@@ -121,5 +123,6 @@ body {
       bottom: 0px;
     left: 0%;
     border-radius: 0px;
+    margin:0px ;
     }
   }
