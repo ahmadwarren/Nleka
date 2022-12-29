@@ -29,7 +29,7 @@ body {
     background: #000000e0;
      position: fixed; 
      bottom: 10px;
-    left: calc((100% - 230px)/2); 
+    left: calc((100% - 380px)/2); 
     display: flex;
     margin: 10px auto;
     z-index: 2;

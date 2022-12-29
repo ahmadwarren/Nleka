@@ -10,14 +10,21 @@ import Restos from './asset/Restos';
 import Cart from './asset/cart';
 import User from './asset/user';
 import Notification from './asset/notify';
+import Login from './asset/login';
+
   class App extends React.Component {
 // ,LinkRouter,Routes,
+
+  
+ 
+  
     render() {
       return (
             <div>
+              
                <Search />
              
-                
+               
                 
         <Router> 
             <nav>
@@ -49,6 +56,7 @@ import Notification from './asset/notify';
             <Route exact path='/cart' element={< Cart/>}></Route>
             <Route exact path='/user' element={< User/>}></Route>
             <Route exact path='/notification' element={< Notification/>}></Route>
+            <Route exact path='/login' element={< Login/>}></Route>
           </Routes> 
         </Router>              
             </div>      
