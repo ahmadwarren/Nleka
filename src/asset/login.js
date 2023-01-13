@@ -11,12 +11,6 @@ const Login = () => {
  const HandleSubmit = (e) => {
     e.preventDefault()
     alert("hello " + password + username)
-// const account = users.find((user) => user.username === username);
-//  if (account && account.password === password) {
-
-//   setauthenticated(true)
-//   localStorage.setItem("authenticated", true);
-//   
   return <Navigate to={"/cart"} />;
 // }
 };
