@@ -122,4 +122,8 @@ body {
     left: 0%;
     border-radius: 0px;
     }
+ nav .menu-btn svg{
+    width: 20px;
+    fill: #fff;
+  }
   }
