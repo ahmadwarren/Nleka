@@ -40,7 +40,7 @@ body {
     padding: 10px;
   } 
   nav .menu-btn:focus{
-    color: --color; 
+    color: var(--color); 
   }
   nav .menu-btn:hover svg, nav .menu-btn:focus svg{
     fill: skyblue;
