@@ -20,7 +20,7 @@ body {
     width: 230px;
     padding: 0px;
     border-radius: 10px;
-    background: #000000ef;
+    background: #fff;
     position: fixed;
     bottom: 10px;
     left: 40%;
@@ -45,7 +45,7 @@ body {
   } 
   nav .menu-btn svg{
     width: 30px;
-    fill: #fff;
+    fill: #111;
   }
   nav .menu-btn::after{
     content: "";
@@ -123,7 +123,7 @@ body {
     border-radius: 0px;
     }
  nav .menu-btn svg{
-    width: 20px;
+    width: 30px;
     fill: #fff;
   }
   }
