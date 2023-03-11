@@ -93,15 +93,14 @@ body {
     
     overflow-x: hidden;
     display: grid;
-    grid-template-columns: repeat(300px,auto-fill);
+    grid-template-columns: repeat(min(300px),auto-fill);
     grid-gap: 10px;
 
   }
  
   .container .box{
     background: #eee;
-    width: 100px;
-    max-height: 350px;
+    min-width: 200px;
     box-shadow: rgb(0 0 0 / 28%) 0px 1px 4px;
     border-radius: 3px;
   }
