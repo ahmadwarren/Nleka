@@ -100,7 +100,7 @@ body {
  
   .container .box{
     background: #eee;
-    min-width: 200px;
+    width: 200px;
     box-shadow: rgb(0 0 0 / 28%) 0px 1px 4px;
     border-radius: 3px;
   }
