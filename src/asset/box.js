@@ -5,8 +5,8 @@ const Box =()=> {
         <div class = "box">
           <div class="img">            
         <div>
-         <audio src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3" controls />
-     </div>
+         <audio src="https://github.com/ahmadwarren/Nleka/blob/1c5d8377959ab46a549d19f4745d1b9c8aacca8a/Music/Black_Sherif_-_Kwaku_the_Traveller_(Official_Video)(128k).m4a" controls />
+         </div>
           </div>
           <div class="details">
 
