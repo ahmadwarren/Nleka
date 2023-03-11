@@ -36,7 +36,6 @@ body {
     padding: 10px;
   } 
   nav .menu-btn:focus{
-    background: #000000;
     color: #e95528; 
   }
   nav .menu-btn:hover svg, nav .menu-btn:focus svg{
