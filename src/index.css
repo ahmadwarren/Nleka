@@ -3,9 +3,8 @@ body {
     margin: 20px;
     background: #fff;
     color: #000;
-    transition: all 4s;
+    transition: all .3s;
     word-wrap: break-word;
-    overflow: hidden;
   }
   /* global */
  a{
