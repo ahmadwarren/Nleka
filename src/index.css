@@ -1,6 +1,6 @@
 ::root{
 
---color: bluesky;
+--color: skyblue;
 }
 
 body {
@@ -43,7 +43,7 @@ body {
     color: --color; 
   }
   nav .menu-btn:hover svg, nav .menu-btn:focus svg{
-    fill: --color;
+    fill: skyblue;
     transition: 1s;
   } 
   nav .menu-btn svg{
