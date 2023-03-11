@@ -101,7 +101,7 @@ body {
   .container .box{
     background: #eee;
     height:500px;
-    max-width:300px;
+    width:auto-fit;
     box-shadow: rgb(0 0 0 / 28%) 0px 1px 4px;
     border-radius: 3px;
   }
