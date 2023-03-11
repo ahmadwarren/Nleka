@@ -93,7 +93,7 @@ body {
     
     overflow-x: hidden;
     display: grid;
-    grid-template-columns: repeat(100px,auto-fill);
+    grid-template-columns: repeat(300px,auto-fill);
     grid-gap: 10px;
 
   }
@@ -101,7 +101,7 @@ body {
   .container .box{
     background: #eee;
     height:500px;
-    max-width:100px;
+    max-width:300px;
     box-shadow: rgb(0 0 0 / 28%) 0px 1px 4px;
     border-radius: 3px;
   }
