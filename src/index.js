@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import './index.css';
 import Menu from './asset/menu'
@@ -10,6 +11,7 @@ import Box from './asset/box';
     render() {
       return (
             <div>
+             <Route>
               <Search />
              
                 <Box />
@@ -17,7 +19,7 @@ import Box from './asset/box';
                 <Menu />
               
                  
-               
+               </ Route>
             </div>      
       );
     }
@@ -27,4 +29,4 @@ import Box from './asset/box';
   
   const root = ReactDOM.createRoot(document.getElementById("root"));
   root.render(<App />);
-  
+ 
