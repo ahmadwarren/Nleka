@@ -20,7 +20,7 @@ import Box from './asset/box';
                 <Menu />
               <Routes>        
               <Route exact path='/' element={<Box />}></Route>
-              <Route exact path='/find' element={}></Route>
+              <Route exact path='/find' element={<Find />}></Route>
            
               <Route exact path='/userinfo' element={< User/>}></Route>
               <Route exact path='/settings' element={< Settings/>}></Route>
