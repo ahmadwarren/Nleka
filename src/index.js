@@ -6,6 +6,10 @@ import './index.css';
 import Menu from './asset/menu'
 import Search from './asset/search';
 import Box from './asset/box';  
+import Find from './asset/find';
+import Settings from './asset/settings';
+import Login from './asset/login';
+import User from './asset/user';
   class App extends React.Component {
 
     render() {
