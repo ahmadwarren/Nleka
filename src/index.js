@@ -11,15 +11,23 @@ import Box from './asset/box';
     render() {
       return (
             <div>
-             <Route>
+            <Router> 
+             
               <Search />
              
-                <Box />
+                
                
                 <Menu />
-              
+              <Routes>        
+              <Route exact path='/' element={<Box />}></Route>
+              <Route exact path='/find' element={}></Route>
+           
+              <Route exact path='/userinfo' element={< User/>}></Route>
+              <Route exact path='/settings' element={< Settings/>}></Route>
+              <Route exact path='/login' element={< Login/>}></Route>
+          </Routes>
                  
-               </ Route>
+               </Router>
             </div>      
       );
     }
