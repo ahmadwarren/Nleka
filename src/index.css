@@ -47,7 +47,7 @@ body {
     transition: 1s;
   } 
   nav .menu-btn svg{
-    width: 30px;
+    width: 20px;
     fill: #111;
   }
   nav .menu-btn::after{
